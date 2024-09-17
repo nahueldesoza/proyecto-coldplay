@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+header nav ul{
+    list-style: none;
+    text-align: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.encabezado{
+    position: sticky;
+    top: 0px;
+    background-color: #19647E;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 20px;
+}
+.encabezado li{
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+main{
+    background-color: #37392D;
+    letter-spacing: 2px;
+    padding: 20px;
+    color: #ECEDE8;
+}
+.titulo{
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+}
+.pie{
+    background-color: #19647E;
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 40px;
+    text-align: center;
+}
+.pie p{
+    padding: 20px;
+}
+.pie img{
+    width: 30px;
+    height: 30px;    
+}
+.imagen-banda{
+    text-align: center;
+    size: 50px;
+}
+.tour table td{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}   
+h2{
+    text-decoration: underline;
+    padding: 20px;
+}
+.banda{
+    text-align: center;
+}
+.banda img{
+    margin: 20px;    
+    width: 400px;
+}
+#temas{
+    text-align: center;
+}
+#temas span{
+
+    display: inline-block;
+    margin-left: 120px;
+    margin-right: 120px;    
+}
+#temas span h3{
+    text-decoration: underline;
+}
+#temas li{
+    list-style: none;
+}
+.banda iframe{
+    margin: 20px;
+}
+#galeria{
+    padding: 20px; 
+}
+#galeria img{
+    margin: 20px;
+    width: 400px;
+}
+#form p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}

@@ -4,12 +4,10 @@
     font-family: "Roboto";
     box-sizing: border-box;
 }
-header{
-    color: whitesmoke;
-}
 header nav ul{
     list-style: none;
-    text-align: center;    
+    text-align: center;  
+    
 }
 header nav ul li a{
     text-decoration: none;
@@ -23,12 +21,11 @@ header nav ul li a{
     font-size: 18px;
     padding: 20px;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 .encabezado nav ul {
     display: flex;
-    gap: 180px;
-    flex-wrap: nowrap;
+    gap: 100px;
 }
 .encabezado li{
     display: inline-block;

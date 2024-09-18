@@ -4,9 +4,12 @@
     font-family: "Roboto";
     box-sizing: border-box;
 }
+header{
+    color: whitesmoke;
+}
 header nav ul{
     list-style: none;
-    text-align: center;
+    text-align: center;    
 }
 header nav ul li a{
     text-decoration: none;
@@ -19,11 +22,16 @@ header nav ul li a{
     font-weight: bolder;
     font-size: 18px;
     padding: 20px;
+    display: flex;
+    justify-content: center;   
+}
+.encabezado nav ul {
+    display: flex;
+    gap: 180px;
+    flex-wrap: nowrap;
 }
 .encabezado li{
     display: inline-block;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 main{
     background-color: #37392D;
@@ -42,7 +50,9 @@ main{
     color: whitesmoke;
     font-size: 15px;
     padding: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .pie p{
     padding: 20px;
@@ -99,4 +109,7 @@ h2{
 #form p{
     font-size: 20px;
     margin-bottom: 15px;
+}
+#contact{
+    height: 80vh;
 }

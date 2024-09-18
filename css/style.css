@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 header nav ul{
-    list-style: none;
-    text-align: center;    
+    list-style: none;   
 }
 header nav ul li a{
     text-decoration: none;
@@ -19,12 +18,11 @@ header nav ul li a{
     font-weight: bolder;
     font-size: 18px;
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 .encabezado nav ul {
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    gap: 5rem;
 }
 .encabezado li{
     display: inline-block;
@@ -41,8 +39,9 @@ main{
     grid-template-columns: 40% 40%;
     grid-template-rows: 1fr;
     column-gap: 30px;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
+
 .falso-body main .presentacion{
     display: flex;
     flex-direction: column;
@@ -50,9 +49,13 @@ main{
 }
 .imagen-principal{
     display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 .imagen-principal img{
     max-width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
 }
 .imagen-banda{
     display: flex;
@@ -68,7 +71,7 @@ main{
     background-color: #19647E;
     font-weight: bolder;
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 1rem;
     padding: 40px;
     display: flex;
     justify-content: space-around;
@@ -78,8 +81,7 @@ main{
     padding: 20px;
 }
 .pie img{
-    width: 30px;
-    height: 30px;    
+    width: 2rem;  
 }
 .tour table td{
     padding: 20px;
@@ -115,9 +117,17 @@ h2{
 }
 #galeria{
     display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "galeria galeria galeria"
+    "galeria galeria galeria";
+}
+#galeria div{
+    grid-area: titulo;
 }
 #galeria article{
-    padding: 20px; 
+    grid-area: galeria;
+    padding: 20px;
 }
 #galeria article img{
     margin: 20px;
@@ -130,4 +140,21 @@ h2{
 }
 #contact{
     height: 80vh;
+}
+/* mq mobile*/
+@media screen and (max-width: 600px){
+    .falso-body{
+        height: 100%;
+    }
+    .encabezado{
+        font size: 1em;
+        padding: 1em;
+    }
+    .encabezado nav ul{
+        gap: 0.5em;        
+    }
+    .falso-body main{
+        grid-template-columns: 80%;
+        font-size: 0.7em;
+    }
 }

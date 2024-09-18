@@ -48,7 +48,7 @@ main{
     font-size: 15px;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .pie p{
@@ -72,25 +72,23 @@ h2{
     padding: 20px;
 }
 .banda{
+    display: flex;
+    justify-content: space-evenly;
+}
+.banda .temas{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
-.banda img{
+.temas img{
     margin: 20px;    
-    width: 400px;
+    width: 30vh;
 }
-#temas{
-    text-align: center;
-}
-#temas span{
-
-    display: inline-block;
-    margin-left: 120px;
-    margin-right: 120px;    
-}
-#temas span h3{
+.temas div h3{
     text-decoration: underline;
 }
-#temas li{
+.temas li{
     list-style: none;
 }
 .banda iframe{
@@ -101,7 +99,8 @@ h2{
 }
 #galeria img{
     margin: 20px;
-    width: 400px;
+    width: 30%;
+    height: 40%;
 }
 #form p{
     font-size: 20px;

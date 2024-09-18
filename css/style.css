@@ -6,8 +6,7 @@
 }
 header nav ul{
     list-style: none;
-    text-align: center;  
-    
+    text-align: center;    
 }
 header nav ul li a{
     text-decoration: none;
@@ -36,10 +35,34 @@ main{
     padding: 20px;
     color: #ECEDE8;
 }
+.falso-body main{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    justify-content: space-around;    
+}
+.falso-body main .presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imagen-principal{
+    display: flex;
+}
+.imagen-principal img{
+    max-width: 100%;
+}
+.imagen-banda{
+    display: flex;
+    justify-content: center;
+}
 .titulo{
     text-align: center;
     font-size: 45px;
     padding: 20px;
+    text-decoration: underline;
 }
 .pie{
     background-color: #19647E;
@@ -57,10 +80,6 @@ main{
 .pie img{
     width: 30px;
     height: 30px;    
-}
-.imagen-banda{
-    text-align: center;
-    size: 50px;
 }
 .tour table td{
     padding: 20px;
@@ -95,9 +114,12 @@ h2{
     margin: 20px;
 }
 #galeria{
+    display: grid;
+}
+#galeria article{
     padding: 20px; 
 }
-#galeria img{
+#galeria article img{
     margin: 20px;
     width: 30%;
     height: 40%;

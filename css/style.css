@@ -143,18 +143,34 @@ h2{
 }
 /* mq mobile*/
 @media screen and (max-width: 600px){
-    .falso-body{
-        height: 100%;
-    }
     .encabezado{
-        font size: 1em;
+        font-size: 1em;
         padding: 1em;
     }
     .encabezado nav ul{
         gap: 0.5em;        
     }
     .falso-body main{
-        grid-template-columns: 80%;
+        height: auto;
+        grid-template-columns: 100%;
         font-size: 0.7em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;        
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .falso-body main div img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;        
+    }
+    .pie{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .pie img{
+        width: 1em;
+        height: 1em;
     }
 }

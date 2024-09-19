@@ -163,7 +163,7 @@ h2{
     .falso-body main div img{
         width: 100%;
         height: 100%;
-        object-fit: contain;        
+        object-fit: cover;        
     }
     .pie{
         font-size: 1em;
@@ -179,12 +179,21 @@ h2{
         object-fit: cover;
     }
     /* mq mobile tour*/
-    .tour-main main{
-        height: auto;
-        display: flex;
+    .tour-main{
+        height: 100vh;        
         font-size: 0.7em;
         padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.5em;        
+    }
+    .tour table tr{
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-template-rows: repeat(3, 25%) ;
+        justify-content: center;
+        column-gap: 1em;
+    }
+    .tour table tr td{
+        font-size: 0.7em;
     }
 }
 
@@ -202,5 +211,11 @@ h2{
         font-size: 0.7em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+    }
+    /* mq para vista tablet index*/
+    .imagen-banda img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

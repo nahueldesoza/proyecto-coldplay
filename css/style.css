@@ -123,10 +123,10 @@ h2{
     "galeria galeria galeria"
     "galeria galeria galeria";
 }
-#galeria div{
+#galeria .titulo{
     grid-area: titulo;
 }
-#galeria article{
+#galeria #carouselExampleIndicators{
     grid-area: galeria;
     padding: 20px;
 }

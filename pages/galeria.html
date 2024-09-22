@@ -32,14 +32,35 @@
             <h1 class="titulo">Galería</h1>
             <h2>Algunas imágenes de la banda a lo largo de los años</h2>
         </div>
-        <article>      
-            <img src="../assets/coldplay4.webp" alt="Imagen de la banda 1">
-            <img src="../assets/coldplaytour(2).jpg" alt="Imagen de la banda 2">
-            <img src="../assets/coldplay.webp" alt="Imagen de la banda 3">
-            <img src="../assets/coldplay3.webp" alt="Imagen de la banda 4">
-            <img src="../assets/coldplaytour2.jpg" alt="Imagen de la banda 5">
-            <img src="../assets/cdplay6.jpeg" alt="Imagen de la banda 6">            
-        </article>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/coldplay4.webp" class="d-block w-50" alt="Imagen de la banda 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/coldplaytour(2).jpg" class="d-block w-50" alt="Imagen de la banda 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/coldplay.webp" class="d-block w-50" alt="Imagen de la banda 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
     <footer class="pie">
@@ -52,6 +73,7 @@
             <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank"><img src="../assets/youtube.png" alt="Ícono de Youtube"></a>
         </div>        
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script> 
 </body>
 </html>

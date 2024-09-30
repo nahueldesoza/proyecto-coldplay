@@ -5,7 +5,7 @@
     font-family: "Fredoka", sans-serif;
 }
 body{
-    background-color: #37392D;
+    background-color: #1d3557;
 }
 header nav ul{
     list-style: none;   
@@ -17,10 +17,11 @@ header nav ul li a{
 .encabezado{
     position: sticky;
     top: 0px;
-    background-color: #19647E;
+    background-color: #457b9d;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
 }
@@ -32,43 +33,36 @@ header nav ul li a{
 .encabezado li{
     display: inline-block;
 }
-main{
-    
+main{    
     letter-spacing: 2px;
     padding: 20px;
     color: #ECEDE8;
 }
-.falso-body main{
+.falso-body main, .tour-main{
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 1fr;
-    column-gap: 30px;
+    column-gap: 20vh;
     justify-content: space-around;
 }
 
 .falso-body main .presentacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
     letter-spacing: 3px;
     line-height: 25x;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
 }
 .imagen-principal{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.imagen-principal img{
+.imagen-principal img, .imagen-tour img{
     max-width: 100%;
     max-height: 50vh;
     object-fit: cover;
-}
-.imagen-banda{
-    display: flex;
-    justify-content: center;
-}
-.imagen-banda img{
-    width: 50%;
 }
 .titulo{
     text-align: center;
@@ -77,7 +71,7 @@ main{
     text-decoration: underline;
 }
 .pie{
-    background-color: #19647E;
+    background-color: #457b9d;
     font-weight: bolder;
     color: whitesmoke;
     font-size: 1rem;
@@ -90,18 +84,32 @@ main{
     padding: 20px;
 }
 .pie img{
-    width: 2rem;  
+    width: 2rem;
 }
 .tour-main{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-items: center;
+    align-items: center;
+    column-gap: 20vh;
 }
-.tour table td{
+.tour-main table td{
     padding: 20px;
     text-align: center;
     font-size: 25px;
-}   
+}
+.tour table tr td button{
+    width: 130%;
+    background-color: #19647E;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+.tour table tr td button:hover{
+    background-color: #09a8dd;
+    transition: 0.5s;
+}
+.tour table tr td button:active{
+    border: 1px solid whitesmoke;
+}
 h2{
     text-decoration: underline;
     padding: 20px;
@@ -155,10 +163,11 @@ h2{
 /* mq mobile index*/
 @media screen and (max-width: 600px){
     .encabezado{
-        font-size: 0.7em;
+        font-size: 0.7em;       
     }
     .encabezado nav ul{
-        gap: 2em;   
+        gap: 1em;
+        letter-spacing: normal;
     }
     .falso-body main{
         height: auto;
@@ -168,7 +177,7 @@ h2{
         padding-bottom: 0.5em;        
     }
     .titulo{
-        font-size: 2em;
+        font-size: 4em;
     }
     .falso-body main div img{
         width: 100%;
@@ -183,27 +192,12 @@ h2{
         width: 1em;
         height: 1em;
     }
-    .imagen-banda img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    /* mq mobile discografía*/
+    .discografia{
+        text-align: center;
     }
-    /* mq mobile tour*/
-    .tour-main{
-        height: 100vh;        
-        font-size: 0.7em;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;        
-    }
-    .tour table tr{
-        display: grid;
-        grid-template-columns: repeat(3, 25%);
-        grid-template-rows: repeat(3, 25%) ;
-        justify-content: center;
-        column-gap: 1em;
-    }
-    .tour table tr td{
-        font-size: 0.7em;
+    .banda{
+        flex-direction: column;
     }
 }
 
@@ -222,10 +216,28 @@ h2{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-    /* mq para vista tablet index*/
-    .imagen-banda img{
+    /* mq para vista tablet tour*/
+    .imagen-tour img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }    
+    .tour-main{
+        font-size: 0.7em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        column-gap: 0.5em;
+        grid-template-columns: 100%;
+        justify-items: center;    
+    }
+    .tour table tr{
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-template-rows: repeat(3, 25%) ;
+        justify-content: center;
+        column-gap: 2em;
+    }
+    .tour table tr td{
+        font-size: 0.7em;
     }
 }

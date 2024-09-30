@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
 }
 body{
     background-color: #37392D;
@@ -21,10 +21,12 @@ header nav ul li a{
     font-weight: bolder;
     font-size: 18px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 .encabezado nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: center;   
     gap: 5rem;
 }
 .encabezado li{
@@ -65,6 +67,9 @@ main{
     display: flex;
     justify-content: center;
 }
+.imagen-banda img{
+    width: 50%;
+}
 .titulo{
     text-align: center;
     font-size: 45px;
@@ -86,6 +91,11 @@ main{
 }
 .pie img{
     width: 2rem;  
+}
+.tour-main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
 }
 .tour table td{
     padding: 20px;

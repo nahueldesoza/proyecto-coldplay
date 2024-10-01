@@ -8,7 +8,7 @@ body{
     background-color: #1d3557;
 }
 header nav ul{
-    list-style: none;   
+    list-style: none;
 }
 header nav ul li a{
     text-decoration: none;
@@ -25,14 +25,14 @@ header nav ul li a:hover{
     background-color: #457b9d;
     font-weight: bolder;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 15px;
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
 }
 .encabezado nav ul {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     gap: 5rem;
 }
 .encabezado li{
@@ -84,6 +84,9 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.pie p{
+    margin: 0;
 }
 .pie img{
     width: 2rem;

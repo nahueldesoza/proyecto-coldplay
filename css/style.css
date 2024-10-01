@@ -26,7 +26,7 @@ header nav ul li a:hover{
     font-weight: bolder;
     font-size: 20px;
     padding: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     display: flex;
     justify-content: center;
 }
@@ -143,22 +143,43 @@ h2{
 #galeria{
     display: flex;
     flex-direction: column;
-    align-items: center;
- 
+    justify-items: center;
 }
 #galeria-fotos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #galeria-fotos img{
     width: 30%;     
     padding: 20px;
     object-fit: cover;
 }
-#form p{
-    font-size: 20px;
-    margin-bottom: 15px;
+#form{
+    padding: 0 20px;
 }
+#form p{
+    font-size: 20px;    
+}
+#form fieldset{
+    padding: 20px;
+    border: whitesmoke solid;
+    line-height: 2.5em;
+}
+#form fieldset legend{
+    text-decoration: underline;
+}
+.button input{
+    background-color: #19647E;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+.button input:hover{
+    background-color: #09a8dd;
+    transition: 0.5s;
+}    
 /* mq MOBILE INDEX*/
 @media screen and (max-width: 600px){
     .encabezado{
@@ -197,6 +218,30 @@ h2{
     }
     .banda{
         flex-direction: column;
+    }
+    /* mq MOBILE GALERIA*/
+    #galeria-fotos{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #galeria-fotos img{
+        padding: 0px;
+        width: 100%;
+        height: 100%;  
+    }
+    /* mq MOBILE DISCOGRAFIA*/
+    #contact #form{
+        font-size: 0.7em;
+    }
+    #contact p{        
+        font-size: 1em;
+    }
+    #form fieldset{
+        line-height: 2em;
+    }
+    #form legend{
+        text-align: center;
     }
 }
 
@@ -239,4 +284,9 @@ h2{
     .tour table tr td{
         font-size: 0.7em;
     }
+    /* mq para VISTA TABLET GALERIA*/
+    #galeria-fotos img{
+        padding: 10px;
+    }
+
 }

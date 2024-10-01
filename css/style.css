@@ -14,6 +14,11 @@ header nav ul li a{
     text-decoration: none;
     color: whitesmoke;
 }
+header nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    transition: 0.5s;
+}
 .encabezado{
     position: sticky;
     top: 0px;
@@ -71,6 +76,7 @@ main{
     text-decoration: underline;
 }
 .pie{
+    
     background-color: #457b9d;
     font-weight: bolder;
     color: whitesmoke;
@@ -79,9 +85,6 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.pie p{
-    padding: 20px;
 }
 .pie img{
     width: 2rem;
@@ -139,28 +142,31 @@ h2{
 }
 #galeria{
     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20% 40% 40%;
+    justify-content:center;
+    align-items: center;
     grid-template-areas: 
     "titulo titulo titulo"
     "galeria galeria galeria"
     "galeria galeria galeria";
 }
-#galeria .titulo{
+#galeria-titulo{
     grid-area: titulo;
 }
-#galeria #carouselExampleIndicators{
-    grid-area: galeria;
-    padding: 20px;
+#galeria-fotos{
+    grid-area: galeria;    
 }
-#galeria article img{
-    margin: 20px;
-    width: 30%;
-    height: 40%;
+#galeria-fotos img{
+    width: 30%;     
+    padding: 20px;
+    object-fit: cover;
 }
 #form p{
     font-size: 20px;
     margin-bottom: 15px;
 }
-/* mq mobile index*/
+/* mq MOBILE INDEX*/
 @media screen and (max-width: 600px){
     .encabezado{
         font-size: 0.7em;       
@@ -192,7 +198,7 @@ h2{
         width: 1em;
         height: 1em;
     }
-    /* mq mobile discografía*/
+    /* mq MOBILE DISCOGRAFIA*/
     .discografia{
         text-align: center;
     }
@@ -201,7 +207,7 @@ h2{
     }
 }
 
-/* mq para vista tablet index*/
+/* mq para VISTA TABLET INDEX*/
 @media screen and (max-width: 1024px){
     .encabezado nav ul{
         gap: 3em;
@@ -216,14 +222,14 @@ h2{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-    /* mq para vista tablet tour*/
+    /* mq para VISTA TABLET TOUR*/
     .imagen-tour img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }    
     .tour-main{
-        font-size: 0.7em;
+        font-size: 1em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         column-gap: 0.5em;

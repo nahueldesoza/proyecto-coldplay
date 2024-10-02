@@ -29,10 +29,12 @@ header{
     font-size: 1em;
     padding: 10px;
     letter-spacing: 2px;
-    @include flex-row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     nav{
         ul{
-            @include flex-row;
+            
             gap: 4rem;
             li{
                 display: inline-block;

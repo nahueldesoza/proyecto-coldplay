@@ -1,0 +1,135 @@
+//imports
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*estilos del main*/
+main{
+    letter-spacing: 2px;
+    padding: $padding-main;
+    color: $color-font;
+}
+/*estilos propios de pagina principal*/
+.falso-body{
+    main{
+        @include index-tour;
+        .presentacion{
+            text-align: center;
+            letter-spacing: 3px;
+            line-height: 25x;
+            @include flex-column;
+            justify-content: center;
+
+        }
+    }    
+}
+.imagen-principal{
+    @include flex-column;
+    align-self: center;
+    img{
+        @include index-tour_img;
+    }
+}
+/*estilos propios de pagina tour*/
+.tour-main{
+    @include index-tour;
+    align-items: center;
+    column-gap: 20vh;
+    table{
+        tr{
+            td{
+                padding:20px;
+                text-align: center;
+                font-size: nth($list-fontsize,2);
+                button{
+                    width: 130%;
+                    background-color: $color-button;
+                    color: whitesmoke;
+                    border: none;
+                    border-radius: 10%;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: $color-button_hover;
+                        transition: 0.5s;
+                    }
+                    &:active{
+                        border: 1px solid whitesmoke;
+                    }
+                }
+            }      
+        }          
+    }
+}
+
+.imagen-tour{
+    img{
+        @include index-tour_img;
+    }
+}
+/*estilos propios de pagina discografia*/
+.banda{
+    display: flex;
+    justify-content: space-evenly;
+    .temas{
+        @include flex-column;
+        align-items: center;
+        text-align: center;
+    }
+    iframe{
+        margin: 20px;
+    }
+}
+.temas{
+    img{
+        margin: 20px;    
+        width: 30vh;
+    }
+    div{
+        h3{
+            text-decoration: underline;
+        }
+    }
+    li{
+        list-style: none;
+    }
+}
+/*estilos propios de pagina galeria*/
+#galeria{
+    @include flex-column;
+    justify-items: center;
+}
+#galeria-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        width: 30%;     
+        padding: 20px;
+        object-fit: cover;
+    }
+}
+/*estilos propios de pagina contacto*/
+#form{
+    padding: 0 20px;
+    p{
+        font-size: 1.3rem;
+    };
+    fieldset{
+        padding: 20px;
+        border: $color-font solid;
+        line-height: 2.5rem;
+        legend{
+            text-decoration: underline;
+        }
+    }
+}
+.button input{
+    background-color: $color-button;
+    color: $color-font;
+    border: none;
+    border-radius: 10%;
+    transition: 0.3s;
+    &:hover{
+        background-color: $color-button_hover;
+        transition: 0.5s;
+    }
+}

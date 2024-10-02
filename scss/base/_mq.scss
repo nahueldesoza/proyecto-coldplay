@@ -1,0 +1,137 @@
+//imports
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*aplicación de mediaqueries*/
+/* mq MOBILE INDEX*/
+@media screen and (max-width: 600px){
+    .encabezado{
+        font-size: nth($list-fontsize,4);
+        nav{
+            ul{
+                gap: 1rem;
+                letter-spacing: normal; 
+            }
+        }
+    }
+    .falso-body{
+        main{
+            height: auto;
+            grid-template-columns: 100%;
+            padding-top: $padding-mq;
+            padding-bottom: $padding-mq;
+            div{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .titulo{
+        font-size: nth($list-fontsize,1)*2;
+    }
+    .presentacion{
+        p{
+            font-size: nth($list-fontsize,3)
+        };
+    }
+    .pie{
+        font-size: nth($list-fontsize,3);
+        padding: $padding-mq;
+        img{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    /* mq MOBILE DISCOGRAFIA*/
+    .discografia{
+        text-align: center;
+    }
+    .banda{
+        flex-direction: column;
+    }
+    /* mq MOBILE GALERIA*/
+    #galeria-fotos{
+        @include flex-column;
+        gap: 10px;
+        img{
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    /* mq MOBILE CONTACTO*/
+    #contact{
+        #form{
+            font-size: nth($list-fontsize,4);
+        }
+        p{
+            font-size: nth($list-fontsize,3);
+        }
+        fieldset{
+            line-height: 2rem;
+        }
+        legend{
+            text-align: center;
+        }
+    }
+}
+/* mq para VISTA TABLET INDEX*/
+@media screen and (max-width: 1024px){
+    .encabezado{
+        nav{
+            ul{
+                gap: 3rem;
+            }
+        }
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+    .falso-body{
+        main{
+            height: auto;
+            grid-template-columns: 100%;
+            font-size: nth($list-fontsize,3);
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    }
+    /* mq para VISTA TABLET TOUR*/
+    .imagen-tour{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .tour-main{
+        font-size: nth($list-fontsize,3);
+        padding-top: $padding-mq;
+        padding-bottom: $padding-mq;
+        column-gap: 0.5rem;
+        grid-template-columns: 100%;
+        justify-items: center;   
+    }
+    .tour{
+        table{
+            tr{
+                display: grid;
+                grid-template-columns: repeat(3, 25%);
+                grid-template-rows: repeat(3, 25%) ;
+                justify-content: center;
+                column-gap: 2em;
+                td{
+                    font-size: nth($list-fontsize,4);
+                }
+            }
+        }
+    }
+    /* mq para VISTA TABLET GALERIA*/
+    #galeria-fotos{
+        img{
+            padding: 10px;
+        }
+    }
+}

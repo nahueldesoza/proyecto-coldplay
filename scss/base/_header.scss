@@ -1,0 +1,42 @@
+//imports
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*estilos del header*/
+header{
+    nav{
+        ul{
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $color-font;
+                    &:hover{
+                        text-decoration: underline;
+                        text-decoration-color: black;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+.encabezado{
+    position: sticky;
+    top: 0px;
+    background-color: $color-header;
+    font-weight: bolder;
+    font-size: 1em;
+    padding: 10px;
+    letter-spacing: 2px;
+    @include flex-row;
+    nav{
+        ul{
+            @include flex-row;
+            gap: 4rem;
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}

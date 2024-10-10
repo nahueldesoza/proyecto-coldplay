@@ -6,7 +6,9 @@
     font-family: "Fredoka", sans-serif;
 }
 body{
-    background-color: $color-body;
+    background-image: url(../assets/coldplay-imagen-de-fondo-modified.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
 }
 .titulo{
     text-align: center;

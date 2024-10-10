@@ -41,7 +41,7 @@ header nav ul li a:hover {
 .encabezado {
   position: sticky;
   top: 0px;
-  background-color: #457b9d;
+  background-color: #3e647c;
   font-weight: bolder;
   font-size: 1em;
   padding: 15px;
@@ -211,7 +211,7 @@ iframe {
 
 /*estilos del footer*/
 .pie {
-  background-color: #457b9d;
+  background-color: #3e647c;
   font-weight: bolder;
   color: whitesmoke;
   font-size: 1rem;

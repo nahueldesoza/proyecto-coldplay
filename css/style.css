@@ -136,6 +136,7 @@ main {
 .banda {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .banda .temas {
   display: flex;
@@ -150,7 +151,7 @@ iframe {
 
 .temas img {
   margin: 20px;
-  width: 30vh;
+  width: 40%;
 }
 .temas div h3 {
   text-decoration: underline;

@@ -27,6 +27,7 @@ main{
     align-self: center;
     img{
         @include index-tour_img;
+        box-shadow: 1px 1px 10px 1px whitesmoke;
     }
 }
 /*estilos propios de pagina tour*/
@@ -63,6 +64,7 @@ main{
 .imagen-tour{
     img{
         @include index-tour_img;
+        box-shadow: 1px 1px 10px 1px whitesmoke;
     }
 }
 /*estilos propios de pagina discografia*/
@@ -83,6 +85,7 @@ iframe{
     img{
         margin: 20px;    
         width: 40%;
+        box-shadow: 1px 1px 10px 1px whitesmoke;
         
     }
     div{
@@ -107,10 +110,11 @@ iframe{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
     img{
-        width: 30%;     
-        padding: 20px;
-        object-fit: cover;        
+        width: 30%;
+        object-fit: cover;
+        box-shadow: 1px 1px 10px 1px whitesmoke;     
     }
 }
 /*estilos propios de pagina contacto*/
@@ -118,7 +122,7 @@ iframe{
     padding: 0 20px;
     p{
         font-size: 1.3rem;
-    };
+    }
     fieldset{
         padding: 20px;
         border: $color-font solid;
@@ -127,6 +131,11 @@ iframe{
             text-decoration: underline;
         }
     }
+}
+#nombre, #email, #telefono{
+    width: 30%;
+    height: 30px;
+    
 }
 .button input{
     background-color: $color-button;

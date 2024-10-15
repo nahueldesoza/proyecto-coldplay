@@ -9,6 +9,7 @@
     font-weight: bolder;
     color: $color-font;
     font-size: nth($list-fontsize, 3);
+    letter-spacing: 2px;
     padding: 2*$padding-main;
     display: flex;
     justify-content: space-around;

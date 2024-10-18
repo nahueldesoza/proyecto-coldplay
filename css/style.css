@@ -34,8 +34,8 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  text-decoration-color: black;
-  transition: 0.5s;
+  text-decoration-color: whitesmoke solid 2px;
+  font-weight: bolder;
 }
 
 .encabezado {
